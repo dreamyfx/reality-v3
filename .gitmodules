@@ -1,0 +1,6 @@
+[submodule "resources/Chrome-App-Bound-Encryption-Decryption"]
+	path = resources/Chrome-App-Bound-Encryption-Decryption
+	url = https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption
+[submodule "resources/ABE-Decryption"]
+	path = resources/ABE-Decryption
+	url = https://github.com/Majanito/ABE-Decryption
