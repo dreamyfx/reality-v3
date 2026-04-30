@@ -1,6 +1,6 @@
 # Reality V3
 **Advanced stealer written in Python**
-
+For more read (REALITY.md)[/REALITY.MD]
 ---
 
 ## Acceptable Use & Legal
