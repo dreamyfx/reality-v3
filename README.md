@@ -1,6 +1,9 @@
 # Reality V3
 **Advanced stealer written in Python**
-For more read (REALITY.md)[/REALITY.MD]
+
+[![Documentation](https://img.shields.io/badge/Documentation-REALITY.md-blue)](./REALITY.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ---
 
 ## Acceptable Use & Legal
