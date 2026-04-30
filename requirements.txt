@@ -1,0 +1,8 @@
+requests>=2.31.0
+wmi>=1.5.1
+psutil>=5.9.0
+pillow>=9.0.0
+cryptography>=3.4.8
+customtkinter>=5.2.0
+pytest>=7.0.0
+black>=22.0.0
