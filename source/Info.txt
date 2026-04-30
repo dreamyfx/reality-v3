@@ -1,2 +1,0 @@
-https://github.com/xaitax/Chrome-App-Bound-Encryption-Decryption as a submodule
-https://github.com/Majanito/ABE-Decryption as a submodule
