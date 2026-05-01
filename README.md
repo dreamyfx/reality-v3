@@ -8,7 +8,7 @@
 
 ## Acceptable Use & Legal
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > **This project is intended solely for educational and defensive cybersecurity research.** It must not be used for unauthorized access, data collection, or any malicious activity. By using this software, you agree to comply with all applicable laws. The author is not responsible for any misuse or damage caused by this project.
 
 ### Integrations
@@ -28,7 +28,7 @@
 ### Prohibited Activities
 Prohibited uses include unauthorized access, surveillance, data collection or exfiltration without consent, and any activity that harms others or violates platform terms. **The maintainers do not condone misuse.**
 
-> [TIP]
+> [!TIP]
 > **If you're looking to actually steal data from people - don't. Get help.**
 
 ---
