@@ -35,8 +35,8 @@ The logic is categorized into specialized handlers to ensure high success rates 
 ### **Execution Flow**
 
 1.  **Initialization:** `main.py` triggers the environment audit.
-2.  **Configuration:** `config.py` and `users.py` load the runtime parameters.
-3.  **Injection/Elevation:** Logic contained in `injector.py` and `chromelevator_x64.exe` handles process-level interactions.
+2.  **Configuration:** `config.py` loads the runtime parameters.
+3.  **Browser Cookie Stealing** Logic contained in `injector.py` and `chromelevator_x64.exe` handles process-level interactions.
 4.  **Exfiltration:** Data is compressed and dispatched via the dual-hook system defined in the build config.
 
 ---
