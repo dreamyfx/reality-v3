@@ -144,7 +144,7 @@ class AdminPanel:
         days = self.days_var.get()
         
         if not tg_chat or not tg_token or not webhook:
-            messagebox.showerror("Error", "All fields are required!")
+            messagebox.showerror("Error", "All fields are required")
             return
         
         expire_time = int((datetime.now() + timedelta(days=days)).timestamp())
@@ -166,7 +166,7 @@ class AdminPanel:
                 self.root.clipboard_clear()
                 self.root.clipboard_append(user_id)
                 
-                messagebox.showinfo("Success", f"User added\n\nUser ID:\n{user_id}\n\nThis ID has been copied to clipboard.")
+                messagebox.showinfo("Success", f"User added\n\nUser ID:\n{user_id}\n\nThe id has been added copied to your clipboard.")
                 
                 self.user_id_var.set(self.generate_user_id())
                 self.tg_chat_id.delete(0, 'end')
@@ -182,7 +182,6 @@ class AdminPanel:
             self.show_notification(f"Failed to add user: {e}", "error")
     
     def load_users(self):
-        """Load all users from Firebase"""
         for item in self.tree.get_children():
             self.tree.delete(item)
         
